@@ -528,7 +528,7 @@ LineRenderer:
     textureMode: 0
     generateLightingData: 0
   m_UseWorldSpace: 1
-  m_Loop: 1
+  m_Loop: 0
 --- !u!4 &587353321
 Transform:
   m_ObjectHideFlags: 0
@@ -1408,7 +1408,7 @@ GameObject:
   - component: {fileID: 1787495738}
   - component: {fileID: 1787495737}
   - component: {fileID: 1787495736}
-  - component: {fileID: 1787495735}
+  - component: {fileID: 1787495739}
   m_Layer: 0
   m_Name: Goal
   m_TagString: Untagged
@@ -1429,18 +1429,6 @@ Transform:
   m_Father: {fileID: 1679887630}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1787495735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11418288, guid: a3ffdeb8394ee844d8f1d3a2e343e651,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1787495733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &1787495736
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1495,6 +1483,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1787495733}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1787495739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1787495733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2acb68408c6fa54699abbd028126f8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1808335828
 GameObject:
   m_ObjectHideFlags: 0
