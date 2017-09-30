@@ -435,6 +435,7 @@ GameObject:
   m_Component:
   - component: {fileID: 587353321}
   - component: {fileID: 587353320}
+  - component: {fileID: 587353322}
   m_Layer: 0
   m_Name: ProjectileLine
   m_TagString: Untagged
@@ -527,7 +528,7 @@ LineRenderer:
     textureMode: 0
     generateLightingData: 0
   m_UseWorldSpace: 1
-  m_Loop: 0
+  m_Loop: 1
 --- !u!4 &587353321
 Transform:
   m_ObjectHideFlags: 0
@@ -541,6 +542,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &587353322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 587353319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02fa55ac6719bdc45aac04fac08f0562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDist: 0.1
+  _____________________: 0
+  line: {fileID: 0}
+  points: []
 --- !u!1 &660074292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1536,7 +1552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c49df354e5aefa744bc02c13f1bc48b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchPoint: {fileID: 38525310}
+  launchPoint: {fileID: 0}
   prefabProjectile: {fileID: 149266, guid: 89c4b82fdfdab2e4890f0f755f21aae5, type: 2}
   velocityMult: 10
   _____________________: 0

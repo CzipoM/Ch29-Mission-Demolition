@@ -100,12 +100,17 @@ public class ProjectileLine : MonoBehaviour {
                     return;
                 }
             }
-            AddPoint();
+            else
+            {
+                return;
+            }
+            
+        }
+        AddPoint();
             if (poi.GetComponent<Rigidbody>().IsSleeping())
             {
                 poi = null;
             }
-        }   
     }
 
 }
