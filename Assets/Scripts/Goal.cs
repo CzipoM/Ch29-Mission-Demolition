@@ -5,7 +5,7 @@ using UnityEngine;
 public class Goal : MonoBehaviour {
     static public bool goalMet = false;
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Projectile")
         {
